@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers HTTP/1.1
+
+###
+
+GET http://localhost:3000/subscribers/62583950b1995e99edc0543d
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "https://www.twitch.tv/kriyatakagi"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/625838edb1995e99edc0543a
+
+###
+
+PATCH http://localhost:3000/subscribers/625841d3e36473ac4404f44d
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
